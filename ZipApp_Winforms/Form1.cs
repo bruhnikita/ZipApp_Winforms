@@ -106,6 +106,10 @@ namespace ZipApp_Winforms
             {
                 MessageBox.Show($"Ошибка: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            txtZipFileName.Text = null;
+            txtExtractPath.Text = null;
+            txtFilesToCompress.Text = null;
         }
 
     }
